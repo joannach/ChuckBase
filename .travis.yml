@@ -3,8 +3,8 @@ solution: ChuckBase.sln
 
 install:
   - nuget restore ChuckBase.sln
-  - nuget install NUnit.Console -Version 3.12.0 -OutputDirectory testrunner
+  - nuget install NUnit.Console -Version 3.9.0 -OutputDirectory testrunner
 script:
   - xbuild ./ChuckBase.sln
-  - mono ./testrunner/NUnit.ConsoleRunner.3.12.0/tools/nunit3-console.exe ./ChuckBaseTests/bin/Debug/ChuckBaseTests.dll
+  - mono ./testrunner/NUnit.ConsoleRunner.3.9.0/tools/nunit3-console.exe ./ChuckBaseTests/bin/Debug/ChuckBaseTests.dll
 
